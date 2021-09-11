@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog | object in JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">IAmDevloper</div>
+    <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+            <a class="link" href="/">home</a>
+        </li>
+        <li class="list-item-inline">
+            <a class="link" href="projects.html">projects</a>
+        </li>
+        <li class="list-item-inline">
+            <a class="link link-active" href="blogs.html">blogs</a>
+        </li>
+    </ul>
+    </nav>
+    <div class="blog-container">
+    <header class="blog-heading">
+        <h1>Object In Javascript</h1>
+    </header>
+
+    <article class="blog-article">
+        <p>Objects are used to store keyed collections of various data and more complex entities. In JavaScript, objects penetrate almost every aspect of the language.An object can be created with figure brackets “{}” with n optional list of properties. A property is a pair of Key and value (key: value)</p>
+        <p>One object creating by syntax</p>
+        <pre>let user = new Object(); // "object constructor" syntax
+            let user = {};  // "object literal" syntax</pre>
+        <h3>Object Literal</h3>
+        <pre>let user = {     
+            name: "John",  
+            age: 30        
+          };</pre>
+        <p>In this object “name” is key, the key is a string and “john” is value, a value can be anything. In the second property value is Number.</p>
+        <p>Property values are accessible using the dot notation:</p>
+        <pre>console.log( user.name ); // John
+            console.log( user.age ); // 30</pre>
+        <p>We can do add & remove properties:</p>
+        <pre>user.isAdmin = true;
+            delete user.age</pre>
+        <p>If we want to add multiword-property names, they must be written in quoted:</p>
+        <pre>let user = {     
+            name: "John",  
+            age: 30 ,
+          "Pokey the Penguin" : "Steve Havelka" 
+          "sachin god of cricke" : true     
+          };</pre>
+        <p>For multiword properties, the ‘dot’ access doesn’t work. Then we used Square Brackets.</p>
+        <h3>Square Brackets</h3>
+        <pre>user.likes animals= true // syntax error</pre>
+        <p>The above equation gives a syntax error because it thinks that we address <small> user.likes</small>, unexpected <small>animals</small>. The dot requires the key to be a valid variable identifier. That implies: contains no spaces, doesn’t start with a digit, and doesn’t include special characters.
+        </p>
+        <p>There’s an alternative “square bracket notation” that works with any string:</p>
+        <pre>user['likes animals']= true</pre>
+        <p>Square brackets are much more powerful than the dot notation. They allow any property names and variables. But they are also more cumbersome to write. So most of the time, when property names are known and simple, the dot is used. And if we need something more complex, then we switch to square brackets.</p>
+        <p>The key and value are the same then we can write a shorthand property.</p>
+        <pre>let user = {
+            name,  // same as name:name
+            age: 30
+          };</pre>
+        <h3>Property names limitation</h3>
+        <p>Property names (keys) must be either strings or symbols. Other types are automatically converted to strings.</p>
+        <h3>Reserved words are allowed as property names.</h3>
+        <p>The variable cannot have a name equal to one of the language-reserved words like “for”, “let”, “return” etc. But for an object property, there’s no such restriction.</p>
+        <pre>let obj = {
+            for: 1,
+            let: 2,
+            return: 3
+          };
+          
+          console.log( obj.for + obj.let + obj.return );</pre>
+
+
+        <img class="blog-image-1" src="./images/undraw_design_inspiration_fmjm.svg" alt="">
+        
+
+    </article>
+    </div>
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-header">connect with me here</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline"><a class="link" href="https://github.com/kri898kri">Github</a></li>
+            <li class="list-item-inline"><a class="link" href="https://www.linkedin.com/in/krishna-kotalwar-268841139/">Linkedin</a></li>
+            <li class="list-item-inline"><a class="link" href="https://www.instagram.com/krishna_kotalwar_/">Instagram</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
