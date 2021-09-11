@@ -137,3 +137,41 @@ hr {
 .footer ul{
     padding-inline-start: 0px;
 }
+
+/* blog */
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    width:70vw;
+    margin: auto;
+    padding-bottom: 6rem;
+}
+.blog-heading {
+    text-align: center;
+    font-size: x-large;
+    padding-top: 1rem;
+    color: var(--dark-gray);
+}
+
+.blog-article {
+    
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.blog-image-1 {
+    width: 80%;
+    max-height: 20rem;
+    margin: auto;
+}
+
+.blog-page-image {
+    max-width: 60%;
+    max-height: 8rem;
+}
