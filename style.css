@@ -30,6 +30,7 @@ hr {
 .link {
     text-decoration: none;
     padding: 0.5rem 1rem;
+    margin-top: 1rem;
 
 }
 
@@ -175,4 +176,5 @@ p {
 .blog-page-image {
     max-width: 60%;
     max-height: 8rem;
+    margin-top: 2rem;
 }
