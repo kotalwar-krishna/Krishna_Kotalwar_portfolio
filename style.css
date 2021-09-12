@@ -113,6 +113,13 @@ hr {
     text-align: center;
 }
 
+.section a {
+    /* text-align: center; */
+    /* background-color: red; */
+    margin: 0 0;
+
+}
+
 .ow{
     background-color: var(--off-white);
 }
